@@ -13,7 +13,6 @@ export function setTask(obj) {
     }
 }
 
-
 export function selectTask(id){
     return {
         type : "SELECT-TASK",

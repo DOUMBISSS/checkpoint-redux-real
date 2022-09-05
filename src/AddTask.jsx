@@ -47,14 +47,12 @@ function AddTask (){
           setDescription('');
           setNameTask("");
           setModify(false)
-
-
       }
 
 
             return(
                 <div className="header--list">
-               <input type="text" placeholder="name task" onChange={handleName} value={nameTask}/>
+               <input type="text" placeholder="Name task" onChange={handleName} value={nameTask}/>
                 <input type="text" placeholder="description" onChange={handleDescription} value={description}/>
                {modify ? <button className="btn--add" onClick={()=>handleSet(selectedTask.id)}>Modifier</button> : <button className="btn--add" onClick={handleAdd}>Ajouter</button>} 
                 {/* <button className="btn--add" onClick={handleValidate}>Valider</button> */}
